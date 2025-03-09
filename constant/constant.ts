@@ -7,12 +7,12 @@ export const navLinks = [
   {
     id: 2,
     url: "#",
-    label: "About",
+    label: "About Us",
   },
   {
     id: 3,
     url: "#",
-    label: "Work",
+    label: "Works",
   },
   {
     id: 4,
@@ -22,16 +22,11 @@ export const navLinks = [
   {
     id: 5,
     url: "#",
-    label: "Help",
+    label: "Your Help",
   },
   {
     id: 6,
     url: "#",
-    label: "Donate",
-  },
-  {
-    id: 7,
-    url: "#",
-    label: "Contact",
+    label: "Contact Us",
   },
 ];
