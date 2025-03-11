@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/Home/Navbar/ResponsiveNav";
+import Footer from "./components/Home/Footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -24,8 +25,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/images/water.svg',
-        href: '/images/water.svg',
+        url: '/water.svg',
+        href: '/water.svg',
       },
     ]
   }
@@ -43,7 +44,7 @@ export default function RootLayout({
       >
         <ResponsiveNav />
         {children}
-        Footer
+        <Footer />
       </body>
     </html>
   );
