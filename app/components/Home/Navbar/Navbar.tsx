@@ -41,7 +41,7 @@ const Navbar = ({openNav}: Props) => {
             <Link 
               href={link.url} 
               key={link.id}
-              className='text-white hover:text-slate-500 transition-all smooth duration-500'>
+              className='text-white hover:text-amber-500 transition-all smooth duration-500'>
               <p>{link.label}</p>
             </Link>
             )}    

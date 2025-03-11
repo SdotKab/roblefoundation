@@ -17,7 +17,7 @@ const About = (props: Props) => {
       >
 
         <motion.div className="px-5 py-12">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
             <span className="text-blue-500">Our </span>Mission:
           </h1>
           <p className="my-3">
