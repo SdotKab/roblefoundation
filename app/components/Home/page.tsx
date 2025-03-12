@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from './Hero/Hero'
 import About from './About/About'
 import Wells from './Wells/Wells'
+import Work from './Work/Work'
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <About />
       <Wells />
+      <Work />
     </div>
   )
 }

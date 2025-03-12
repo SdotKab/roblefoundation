@@ -5,3 +5,9 @@ export interface LocationType {
   title: string;
   description: string;
 }
+
+export interface WorkType {
+  name: string;
+  description?: string;
+  image: string;
+}
