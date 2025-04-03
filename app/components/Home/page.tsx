@@ -7,9 +7,8 @@ import Work from './Work/Work'
 
 const Home = () => {
 
-
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden">
       <Hero />
       <About />
       <Wells />

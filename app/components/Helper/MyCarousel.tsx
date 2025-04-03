@@ -13,8 +13,9 @@ const MyCarousel = ({ name, description, image }: Props) => {
   opacity-0 transistion duration-500 hover:opacity-90`;
 
   return (
-      <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <div className={overlayStyles}>
+      <div className="duration-700 ease-in-out" data-carousel-item>
+          {/* <div className={overlayStyles}> */}
+          <div>
             <p className="text-2xl">{name}</p>
             <p className="mt-5">{description}</p>
           </div>

@@ -29,9 +29,6 @@ const Navbar = ({openNav}: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
-          {/* <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center flex-col">
-            Logo
-          </div> */}
           <h1 className="text-xl md:text-2xl text-white">Roble Foundation</h1>
         </div>
         {/* NavLinks */}
@@ -41,7 +38,7 @@ const Navbar = ({openNav}: Props) => {
             <Link 
               href={link.url} 
               key={link.id}
-              className='text-white hover:text-amber-500 transition-all smooth duration-500'>
+              className='text-white hover:text-primary-300 transition-all smooth duration-500'>
               <p>{link.label}</p>
             </Link>
             )}    

@@ -4,23 +4,13 @@ import "./globals.css";
 import ResponsiveNav from "./components/Home/Navbar/ResponsiveNav";
 import Footer from "./components/Home/Footer/Footer";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 const font = Roboto({
   weight: ["400" , "500" , "700" , "900"],
   subsets: ["latin"]
 })
 
 export const metadata: Metadata = {
-  title: "Roble Foundation",
+  title: "The Roble Foundation",
   description: "Water to Sanag",
   icons: {
     icon: [
@@ -40,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${font.className} antialiased`}
+        className={`app ${font.className} antialiased`}
       >
         <ResponsiveNav />
         {children}
