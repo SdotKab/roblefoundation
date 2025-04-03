@@ -39,7 +39,7 @@ const Work = (props: Props) => {
       >
 
       <motion.div
-        className="w-4/5 mt-10"
+        className="w-4/5 mt-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -49,7 +49,7 @@ const Work = (props: Props) => {
             visible: { opacity: 1, x: 0 },
         }}  
       >
-        <div className="w-4/5">
+        <div className="w-4/5 ml-20">
           <H2Text>
             Our Work: Why Water Matters
           </H2Text>
@@ -69,7 +69,7 @@ const Work = (props: Props) => {
       </motion.div>
 
         <ImageCarousel />
-        
+
     </section>
   )
 }
