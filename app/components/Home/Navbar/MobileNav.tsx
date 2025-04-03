@@ -25,10 +25,10 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
               <p>{link.label}</p>
             </Link>
             )}    
-          )};
+          )}
           
           <Link 
-            className="rounded-md bg-secondary-500 px-5 py-2 w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:bg-primary-500 hover:text-white"
+            className="text-gray-500 rounded-md bg-secondary-500 px-5 py-2 w-fit text-[20px] ml-12 pb-1 border-white sm:text-[30px] hover:bg-primary-500 hover:text-white"
             href="/#contact"  
           >
             Donate

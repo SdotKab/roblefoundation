@@ -25,7 +25,6 @@ const Location = ({ icon, title, description }: Props) => {
           className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
           href="#"
         >
-            <p>Learn More</p>
         </Link>
       </div>
     </motion.div>

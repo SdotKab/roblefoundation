@@ -26,17 +26,17 @@ const images: ImageData[] = [
   {
     src: image2,
     name: "Economic Impact",
-    desc: "Water scarcity limits economic opportunities, forces long walks for unreliable sources, hinders education, employment, agriculture, and income generation.",
+    desc: "Water scarcity limits economic opportunities, forces long walks, and hinders education, jobs, and agriculture.",
   },
   {
     src: image3,
     name: "Environmental Strain",
-    desc: "Overuse and mismanagement of water resources strain the environment, threatening agriculture, food security, and biodiversity without sustainable solutions.",
+    desc: "Overuse and mismanagement of water harm the environment, threatening agriculture, food security, and biodiversity.",
   },
   {
     src: image4,
     name: "The Importance of Action",
-    desc: "Water sustains health, drives development, and nurtures the environment; addressing scarcity fosters thriving communities, improved health, and opportunities.",
+    desc: "Water supports health, development, and the environment; addressing scarcity improves communities and opportunities.",
   },
 ];
 
@@ -97,23 +97,23 @@ const ImageCarousel = () => {
           alt={`Slider Image ${currentIndex + 1}`}
           layout="fill"
           objectFit="cover"
-          className="rounded-xl transition-all duration-500 ease-in-out cursor-pointer"
+          className="rounded-xl transition-all duration-900 ease-in-out cursor-pointer"
         />
         
         {/* Text Overlay - Only visible on hover */}
         <div
-          className={`absolute bottom-0 left-0 right-0 p-4 text-white transition-all duration-300 ease-in-out 
+          className={`absolute bottom-2 left-0 right-0 p-3 text-white transition-all duration-300 ease-in-out 
             ${isHovered ? "bg-gray-600 bg-opacity-50" : "bg-transparent opacity-0"}
           `}
         >
-          <h2 className="text-lg font-bold">{images[currentIndex].name}</h2>
-          <h3 className="text-md">{images[currentIndex].desc}</h3>
+          <h2 className="text-lg font-bold xs:text-md">{images[currentIndex].name}</h2>
+          <h3 className="text-md xs:text-sm">{images[currentIndex].desc}</h3>
         </div>
       </div>
 
       {/* Left Arrow */}
       <button
-        className="absolute left-0 top-1/2 transform h-[459px] rounded-xl hover:bg-secondary-500 mx-1 -mt-[10px] -translate-y-1/2 bg-[#284475] text-white p-2 group"
+        className="absolute left-0 top-1/2 transform h-[459px] rounded-xl hover:bg-secondary-500 mx-1 -mt-[10px] -translate-y-1/2 bg-[#284475] text-white p-2 group xs:hidden"
         onClick={prevSlide}
       >
         <ChevronLeft className="text-gray-400 group-hover:text-white" />
@@ -121,7 +121,7 @@ const ImageCarousel = () => {
 
       {/* Right Arrow */}
       <button
-        className="absolute right-0 top-1/2 transform h-[459px] rounded-xl hover:bg-secondary-500 mx-1 -mt-[10px] -translate-y-1/2 bg-[#284475] text-white p-2 group"
+        className="absolute right-0 top-1/2 transform h-[459px] rounded-xl hover:bg-secondary-500 mx-1 -mt-[10px] -translate-y-1/2 bg-[#284475] text-white p-2 group xs:hidden"
         onClick={nextSlide}
       >
         <ChevronRight className="text-gray-400 group-hover:text-white" />

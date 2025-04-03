@@ -62,9 +62,11 @@ const Wells = (props: Props) => {
             {/* GRAPHIC */}
             <div className="hidden md:flex basis-2/3 justify-center px-5 ">
               <img 
-                  className="rounded-3xl shadow-2xl"
+                  className="rounded-3xl shadow-2xl object-fit"
                   alt="map"
-                  src="/SomalilandMap.png"
+                  src="/Somaliland.png"
+                  width="900" 
+                  height="500"
               />
             </div>
 
