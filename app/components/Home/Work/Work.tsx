@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import H2Text from '../../Helper/H2Text';
 import MyCarousel from '../../Helper/MyCarousel';
+import MyCarousel from '../../Helper/MyCarousel';
 import { WorkType } from '@/types/types';
 
 const works: Array<WorkType> = [
@@ -67,17 +68,19 @@ const Work = (props: Props) => {
           </ul>
         </div>
       </motion.div>
+
+      <BootstrapCarousel />
       
-      <div id="default-carousel" className="relative w-2/5" data-carousel="slide">
+      {/* <div id="default-carousel" className="relative w-2/5" data-carousel="slide">
         <div className="relative h-96 rounded-lg lg:h-96">
-          {/* {works.map((item: WorkType, index) => (
+          {works.map((item: WorkType, index) => (
             <MyCarousel 
               key={`${item.name}-${index}`}
               name={item.name}
               description={item.description}
               image={item.image}
             />
-          ))} */}
+          ))}
           <div className="duration-700 ease-in-out" data-carousel-item>
               <img src="/4Sincaro.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
           </div>
@@ -102,7 +105,7 @@ const Work = (props: Props) => {
           </span>
         </button>
         
-      </div>
+      </div> */}
     </section>
   )
 }

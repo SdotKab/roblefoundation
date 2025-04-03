@@ -6,5 +6,6 @@ html {
   scroll-behavior: smooth
 }
 .app {
+  width: "900px";
   @apply text-gray-500;
 }

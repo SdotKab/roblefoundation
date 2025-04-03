@@ -5,57 +5,97 @@ import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 import DonateButtonLg from '../../Buttons/DonateButtonLg'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation';
 
 type Props = {
-  openNav:() => void;
+  openNav: () => void;
 }
 
-const Navbar = ({openNav}: Props) => {
+const Navbar = ({ openNav }: Props) => {
+  const [navBg, setNavBg] = useState(false);
+  const pathname = usePathname();
+  const [hash, setHash] = useState<string>("");
 
-  const [navBg, setNavBg] = useState(false)
+  useEffect(() => {
+    // Handle hash change and capture the current hash
+    const handleHashChange = () => {
+      setHash(window.location.hash);
+    };
 
-  useEffect(()=> {
+    // Initial set of hash
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup listener
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  useEffect(() => {
     const handler = () => {
-      if(window.scrollY >= 90) setNavBg(true);
-      if(window.scrollY < 90) setNavBg(false);
+      if (window.scrollY >= 90) setNavBg(true);
+      if (window.scrollY < 90) setNavBg(false);
     };
     window.addEventListener("scroll", handler);
 
-    return ()=> window.removeEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
   }, []);
+
+  // Function to handle the link click and update the URL
+  const handleLinkClick = (url: string) => {
+    const targetHash = url.split("#")[1];
+    
+    // Update the hash in the URL
+    if (targetHash) {
+      window.location.hash = targetHash;  // This will change the URL without reloading the page
+    } else {
+      window.history.pushState({}, '', url);
+    }
+  };
 
   return (
     <div className={`transition-all ${navBg ? "bg-blue-500 bg-opacity-95 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
-          <h1 className="text-xl md:text-2xl text-white">Roble Foundation</h1>
+          <h1 className="text-xl md:text-2xl text-white">The Roble Foundation</h1>
         </div>
         {/* NavLinks */}
         <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => {
+            // Check if the current pathname and hash match the link's URL and hash
+            const isActive = pathname && hash === link.url;
+
             return (
-            <Link 
-              href={link.url} 
-              key={link.id}
-              className='text-white hover:text-primary-300 transition-all smooth duration-500'>
-              <p>{link.label}</p>
-            </Link>
-            )}    
-          )}
+              <Link
+                href={link.url}
+                key={link.id}
+                className={`text-white hover:text-primary-300 transition-all duration-500 ${isActive ? 'text-primary-500' : 'text-secondary-500'}`}
+                onClick={(e) => {
+                  e.preventDefault();  // Prevent default link behavior
+                  handleLinkClick(link.url);  // Update the URL programmatically
+                }}
+              >
+                <p>{link.label}</p>
+              </Link>
+            );
+          })}
         </div>
         {/* Button */}
         <div className="hidden lg:flex items-center space-x-10">
           <DonateButtonLg />
         </div>
         {/* Burger Menu */}
-        <HiBars3BottomRight 
+        <HiBars3BottomRight
           className="w-8 h-8 cursor-pointer text-white lg:hidden"
           onClick={openNav}
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
