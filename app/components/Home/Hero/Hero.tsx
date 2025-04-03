@@ -34,15 +34,19 @@ const Hero = (props: Props) => {
               <h1 className="flex text-6xl font-extrabold text-white">
                 The Roble Foundation
               </h1>
-              <h2 className="flex justify-center text-5xl font-medium text-white">
-                Build. Nourish. Thrive.
+              <h2 className="flex justify-center text-3xl font-medium text-white mt-3">
+                Drill Boreholes for Sanaag Region, Somaliland
               </h2>
             </div>
                   
+            {/* <p className="mt-4 text-md text-white">
+              Sixty-nine year old Maryam Hussein spent countless hours walking long distances to retrieve small amount of unclean water. Despite the water's impurity, this was the only option for Jama's family.
+            </p> */}
 
-            <p className="mt-8 text-md text-white">
-              The Roble Foundation is a non-profit organization dedicated to tackling the critical issue of water scarcity in the Sanag Region of Somaliland. Clean and safe water is essential for health, agriculture, and economic stability. Yet, for many communities in this region, accessing water is a daily struggle that profoundly affects their quality of life and opportunities for growth.
+            <p className="mt-4 text-md text-white">
+              The Roble Foundation is a non-profit organization dedicated to tackling the critical issue of water scarcity in the Sanaag Region of Somaliland. Clean and safe water is essential for health, agriculture, and economic being. Yet, for many communities in this region, accessing water is a daily struggle that profoundaly affects their quality of like and opportunities for sustenance.
             </p>
+
           </motion.div>
         </div>
       </motion.div>

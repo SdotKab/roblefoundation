@@ -57,11 +57,11 @@ const Navbar = ({ openNav }: Props) => {
   };
 
   return (
-    <div className={`transition-all ${navBg ? "bg-blue-500 bg-opacity-95 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
+    <div className={`transition-all ${navBg ? "bg-[#284475] bg-opacity-95 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
-          <h1 className="text-xl md:text-2xl text-white">The Roble Foundation</h1>
+          <h1 className="text-bold text-xl md:text-2xl text-white">The Roble Foundation</h1>
         </div>
         {/* NavLinks */}
         <div className="hidden lg:flex items-center space-x-10">
@@ -73,7 +73,7 @@ const Navbar = ({ openNav }: Props) => {
               <Link
                 href={link.url}
                 key={link.id}
-                className={`text-white hover:text-primary-300 transition-all duration-500 ${isActive ? 'text-primary-500' : 'text-secondary-500'}`}
+                className={`text-white text-semibold hover:text-primary-300 transition-all duration-500 ${isActive ? 'text-primary-500' : 'text-secondary-500'}`}
                 onClick={(e) => {
                   e.preventDefault();  // Prevent default link behavior
                   handleLinkClick(link.url);  // Update the URL programmatically

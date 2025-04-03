@@ -52,8 +52,8 @@ const Wells = (props: Props) => {
       >
         <div className="text-center mt-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
-          <span>HELP BUILD A LIFE-SUSTAINING {" "}</span>
-            <span className="text-blue-500">WELLS</span>
+          <span>HELP BUILD LIFE-SUSTAINING {" "}</span>
+            <span className="text-blue-500">BOREHOLES</span>
           </h1>
         </div>
 
