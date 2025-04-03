@@ -61,7 +61,11 @@ const Navbar = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
-          <h1 className="text-bold text-xl md:text-2xl text-white">The Roble Foundation</h1>
+          <Link
+            href="/#home"
+          >
+            <h1 className="text-bold text-xl md:text-2xl text-white">The Roble Foundation</h1>
+          </Link>
         </div>
         {/* NavLinks */}
         <div className="hidden lg:flex items-center space-x-10">

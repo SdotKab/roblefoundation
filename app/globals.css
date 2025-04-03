@@ -7,7 +7,7 @@ html {
 }
 .app {
   width: "900px";
-  @apply text-gray-500;
+  @apply text-gray-500 text-lg;
 }
 
 @layer base {

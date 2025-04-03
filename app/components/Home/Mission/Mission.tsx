@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 type Props = {}
 
-const About = (props: Props) => {
+const Mission = (props: Props) => {
 
   return (
-    <section id="about" className="mx-auto w-5/6 pt-8 pb-6">
+    <section id="mission" className="mx-auto w-5/6 pt-8 pb-6">
       <motion.div 
         className="mt-5 items-center justify-around gap-6 md:flex"
         initial="hidden"
@@ -16,7 +16,7 @@ const About = (props: Props) => {
         viewport={{ once: true, amount: 0.5 }}
       >
 
-        <motion.div className="px-5 py-12">
+        <motion.div className="px-5 py-12 max-auto rounded overflow-hidden shadow-lg">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
             <span className="text-blue-500">Our </span>Mission:
           </h1>
@@ -33,7 +33,7 @@ const About = (props: Props) => {
         <hr className="my-6 h-0.5 border-t-0 bg-gray-400" />
       )} */}
 
-      <motion.div className="px-5 py-12">
+      <motion.div className="px-5 py-12 max-auto rounded overflow-hidden shadow-lg">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
           <span className="text-blue-500">Our </span>Vision:
         </h1>
@@ -46,4 +46,4 @@ const About = (props: Props) => {
   )
 }
 
-export default About
+export default Mission

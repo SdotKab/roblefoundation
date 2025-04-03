@@ -137,13 +137,11 @@ const Contact = ( props: Props) => {
                                 visible: { opacity: 1, y: 0 },
                             }}
                         >
-                            <div>
                                 <Image 
                                     className="w-full rounded-lg"
                                     alt="contact-us-page-graphic"
                                     src={image10}
                                 />
-                            </div>
                         </motion.div>
                     </div>
             </motion.div>
