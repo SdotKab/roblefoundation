@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import H2Text from '../../Helper/H2Text';
 import { WorkType } from '@/types/types';
+import ImageCarousel from '../../Helper/ImageCarousel';
 
 const works: Array<WorkType> = [
   {
@@ -67,6 +68,8 @@ const Work = (props: Props) => {
         </div>
       </motion.div>
 
+        <ImageCarousel />
+        
     </section>
   )
 }
