@@ -23,7 +23,7 @@ const Footer = () => {
           <h4 className="font-bold">Address:</h4>
           <p>The Roble Foundation</p>
           <p>C/O Gordon Caylor, CPA</p>
-          <p>taxesdone4u.com</p>
+          <p>gcaylor@taxesdone4u.com</p>
           <p>44115 Woodridge Pkwy - Suite 100</p>
           <p>Lansdowne, VA 20176</p>
         </div>

@@ -35,7 +35,7 @@ const Work = (props: Props) => {
   return (
       <section
         id="work"
-        className="mx-auto w-5/6 pt-24 pb-32"
+        className="mx-auto w-5/6 pt-24 pb-32 px-10"
       >
 
       <motion.div

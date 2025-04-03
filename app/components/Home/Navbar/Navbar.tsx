@@ -16,6 +16,10 @@ const Navbar = ({ openNav }: Props) => {
   const pathname = usePathname();
   const [hash, setHash] = useState<string>("");
 
+  const handleClick = () => {
+    window.location.hash = "#contact";
+  };
+
   useEffect(() => {
     // Handle hash change and capture the current hash
     const handleHashChange = () => {
@@ -90,7 +94,11 @@ const Navbar = ({ openNav }: Props) => {
         </div>
         {/* Button */}
         <div className="hidden lg:flex items-center space-x-10">
-          <DonateButtonLg />
+          <Link className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
+          href="/#contact"
+          >
+            DONATE
+          </Link>
         </div>
         {/* Burger Menu */}
         <HiBars3BottomRight
