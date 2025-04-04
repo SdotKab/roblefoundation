@@ -9,6 +9,7 @@ type Props = {
 }
 
 const MobileNav = ({ showNav, closeNav }: Props) => {
+  const paypalLink = process.env.NEXT_PUBLIC_PAYPAL_LINK || "#";
   const navOpen = showNav?'translate-x-0': 'translate-x-[-100%]'
 
   return (
@@ -28,7 +29,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
           
           <Link 
             className="text-gray-500 rounded-md bg-secondary-500 px-5 py-2 w-fit text-[20px] ml-12 pb-1 border-white sm:text-[30px] hover:bg-primary-500 hover:text-white"
-            href="/#contact"  
+            href={paypalLink} 
           >
             Donate
           </Link>
