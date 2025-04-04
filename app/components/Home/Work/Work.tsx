@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import H2Text from '../../Helper/H2Text';
 import ImageCarousel from './ImageCarousel';
 
-
 const Work = () => {
   return (
       <section
