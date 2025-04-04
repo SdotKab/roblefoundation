@@ -7,7 +7,7 @@ import H2Text from "../../Helper/H2Text";
 import Image from "next/legacy/image";
 
 const Contact = () => {
-    const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL
+    const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL || "#";
     const inputStyles = `mb-5 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
 
     const {

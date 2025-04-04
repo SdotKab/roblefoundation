@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Navbar = ({ openNav }: Props) => {
-  const paypalLink = process.env.NEXT_PUBLIC_PAYPAL_LINK;
+  const paypalLink = process.env.NEXT_PUBLIC_PAYPAL_LINK || "#";
   const [navBg, setNavBg] = useState(false);
 
   useEffect(() => {
