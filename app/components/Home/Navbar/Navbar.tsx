@@ -4,7 +4,6 @@ import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 import { useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation';
 
 type Props = {
   openNav: () => void;
@@ -12,8 +11,6 @@ type Props = {
 
 const Navbar = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
-  const pathname = usePathname();
-  const [hash, setHash] = useState<string>("");
 
   useEffect(() => {
     const handler = () => {
