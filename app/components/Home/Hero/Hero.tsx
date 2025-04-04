@@ -41,7 +41,7 @@ const Hero = () => {
             </p> */}
 
             <p className="mt-4 text-md text-white">
-              The Roble Foundation is a non-profit organization dedicated to tackling the critical issue of water scarcity in the Sanaag Region of Somaliland. Clean and safe water is essential for health, agriculture, and economic being. Yet, for many communities in this region, accessing water is a daily struggle that profoundaly affects their quality of like and opportunities for sustenance.
+              The Roble Foundation is a non-profit organization dedicated to tackling the critical issue of water scarcity in the Sanaag Region of Somaliland. Clean and safe water is essential for health, agriculture, and economic being. Yet, for many communities in this region, accessing water is a daily struggle that profoundaly affects their quality of life and opportunities for sustenance.
             </p>
 
           </motion.div>
