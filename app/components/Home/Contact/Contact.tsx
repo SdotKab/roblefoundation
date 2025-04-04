@@ -7,8 +7,8 @@ import H2Text from "../../Helper/H2Text";
 import Image from "next/legacy/image";
 
 const Contact = () => {
-    const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL || "#";
-    const inputStyles = `mb-5 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
+    const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL || "#home";
+    const inputStyles = `mb-3 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
 
     const {
         register,
@@ -44,7 +44,7 @@ const Contact = () => {
                     </H2Text>
                 </motion.div>
                 {/* FORM AND IMAGE */}
-                <div className="mt-5 justify-between gap-8 md:flex">
+                <div className="mt-5 justify-between gap-6 md:flex">
                     <motion.div
                         className="mt-10 basis-1/2 md:mt-0"
                         initial="hidden"
@@ -75,7 +75,7 @@ const Contact = () => {
                                 })}
                             />
                             {errors.name && (
-                                <p className="mt-1 text-primary-500">
+                                <p className="mb-3 text-red-700">
                                     {errors.name.type === "required" && "This field is required."}
                                     {errors.name.type === "maxLength" && "Max length is 100 characters."}
                                 </p>
@@ -90,7 +90,7 @@ const Contact = () => {
                                 })}
                             />
                             {errors.email && (
-                                <p className="mt-1 text-primary-500">
+                                <p className="mb-3 text-red-700">
                                     {errors.email.type === "required" && "This field is required."}
                                     {errors.email.type === "email" && "Invalid email address."}
                                 </p>
@@ -106,7 +106,7 @@ const Contact = () => {
                                 })}
                             />
                             {errors.message && (
-                                <p className="mt-1 text-primary-500">
+                                <p className="mb-3 text-red-700">
                                     {errors.message.type === "required" && "This field is required."}
                                     {errors.message.type === "maxLength" && "Max length is 2000 characters."}
                                 </p>
