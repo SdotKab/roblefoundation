@@ -3,7 +3,6 @@
 import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import DonateButtonLg from '../../Buttons/DonateButtonLg'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation';
 
@@ -16,28 +15,6 @@ const Navbar = ({ openNav }: Props) => {
   const pathname = usePathname();
   const [hash, setHash] = useState<string>("");
 
-  const handleClick = () => {
-    window.location.hash = "#contact";
-  };
-
-  useEffect(() => {
-    // Handle hash change and capture the current hash
-    const handleHashChange = () => {
-      setHash(window.location.hash);
-    };
-
-    // Initial set of hash
-    handleHashChange();
-
-    // Listen for hash changes
-    window.addEventListener("hashchange", handleHashChange);
-
-    // Cleanup listener
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
-
   useEffect(() => {
     const handler = () => {
       if (window.scrollY >= 90) setNavBg(true);
@@ -47,18 +24,38 @@ const Navbar = ({ openNav }: Props) => {
 
     return () => window.removeEventListener("scroll", handler);
   }, []);
+  
+
+  // useEffect(() => {
+  //   // Handle hash change and capture the current hash
+  //   const handleHashChange = () => {
+  //     setHash(window.location.hash);
+  //   };
+
+  //   // Initial set of hash
+  //   handleHashChange();
+
+  //   // Listen for hash changes
+  //   window.addEventListener("hashchange", handleHashChange);
+
+  //   // Cleanup listener
+  //   return () => {
+  //     window.removeEventListener("hashchange", handleHashChange);
+  //   };
+  // }, []);
+
 
   // Function to handle the link click and update the URL
-  const handleLinkClick = (url: string) => {
-    const targetHash = url.split("#")[1];
+  // const handleLinkClick = (url: string) => {
+  //   const targetHash = url.split("#")[1];
     
-    // Update the hash in the URL
-    if (targetHash) {
-      window.location.hash = targetHash;  // This will change the URL without reloading the page
-    } else {
-      window.history.pushState({}, '', url);
-    }
-  };
+  //   // Update the hash in the URL
+  //   if (targetHash) {
+  //     window.location.hash = targetHash;  // This will change the URL without reloading the page
+  //   } else {
+  //     window.history.pushState({}, '', url);
+  //   }
+  // };
 
   return (
     <div className={`transition-all ${navBg ? "bg-[#284475] bg-opacity-95 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
@@ -82,10 +79,10 @@ const Navbar = ({ openNav }: Props) => {
                 href={link.url}
                 key={link.id}
                 className={`text-white text-semibold hover:text-primary-300 transition-all duration-500 ${isActive ? 'text-primary-500' : 'text-secondary-500'}`}
-                onClick={(e) => {
-                  e.preventDefault();  // Prevent default link behavior
-                  handleLinkClick(link.url);  // Update the URL programmatically
-                }}
+                // onClick={(e) => {
+                //   e.preventDefault();  // Prevent default link behavior
+                //   handleLinkClick(link.url);  // Update the URL programmatically
+                // }}
               >
                 <p>{link.label}</p>
               </Link>

@@ -3,35 +3,10 @@
 import { motion } from 'framer-motion';
 
 import H2Text from '../../Helper/H2Text';
-import { WorkType } from '@/types/types';
-import ImageCarousel from '../../Helper/ImageCarousel';
+import ImageCarousel from './ImageCarousel';
 
-const works: Array<WorkType> = [
-  {
-    name: "Health Crises",
-    description: "Clean water is crucial for preventing diseases in Sanag Region, saving lives and reducing health crises.",
-    image: "/1Ali.jpg",
-  },
-  {
-    name: "Economic Impact",
-    description: "Water scarcity limits economic opportunities, forces long walks for unreliable sources, hinders education, employment, agriculture, and income generation.",
-    image: "/2Saed.jpg",
-  },
-  {
-    name: "Environmental Strain",
-    description: "Overuse and mismanagement of water resources strain the environment, threatening agriculture, food security, and biodiversity without sustainable solutions.",
-    image: "/9Fatouma.jpg",
-  },
-  {
-    name: "The Importance of Action",
-    description: "Water sustains health, drives development, and nurtures the environment; addressing scarcity fosters thriving communities, improved health, and opportunities.",
-    image: "/4Sincaro.jpg",
-  },
-]
 
-type Props = {}
-
-const Work = (props: Props) => {
+const Work = () => {
   return (
       <section
         id="work"

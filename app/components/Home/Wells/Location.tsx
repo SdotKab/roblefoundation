@@ -19,7 +19,10 @@ const Location = ({ icon, title, description }: Props) => {
     >
       <div className="rounded-md border-2 border-gray-100 px-3 py-3">
         
-        <p className="font-bold">{title}</p>
+        <p className="flex items-center p-1 gap-4">
+          {icon}
+          <span className="font-bold">{title}</span>
+        </p>
         <p className="my-3">{description}</p>
         <Link
           className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

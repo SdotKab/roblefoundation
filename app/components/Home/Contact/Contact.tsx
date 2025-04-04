@@ -6,9 +6,8 @@ import image10 from "@/public/image10.jpg";
 import H2Text from "../../Helper/H2Text";
 import Image from "next/image";
 
-type Props = {};
 
-const Contact = ( props: Props) => {
+const Contact = () => {
 
     const inputStyles = `mb-5 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
 

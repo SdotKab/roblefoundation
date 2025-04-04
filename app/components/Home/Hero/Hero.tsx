@@ -1,12 +1,9 @@
 "use client"
-import React from 'react'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 
-
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero = () => {
 
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 bg-cover bg-no-repeat before: z-[-1] bg-[url('/3Maryam.jpg')] md:h-full md:pb-20">

@@ -7,9 +7,7 @@ import image6 from "@/public/image6.jpg";
 import H2Text from '../../Helper/H2Text';
 import Image from 'next/image';
 
-type Props = {}
-
-const Impact = (props: Props) => {
+const Impact = () => {
   return (
     <section id="impact" className="mx-auto w-5/6 pt-24 pb-24 mt-10">
         {/* HEADER */}

@@ -3,9 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
-type Props = {}
-
-const Mission = (props: Props) => {
+const Mission = () => {
 
   return (
     <section id="mission" className="mx-auto w-5/6 pt-8 pb-6">
@@ -25,13 +23,6 @@ const Mission = (props: Props) => {
           Our mission at the Roble Foundation is to address water scarcity in the Sanag Region by providing sustainable solutions that empower communities, enhance health, and support long-term development. We are committed to creating a future where every individual has access to clean, safe water and the tools to thrive.
           </p>
       </motion.div>
-    
-      {/* {isAboveMediumScreens ? (
-      <div className="inline-block h-[350px] min-h-[1em] w-0.5 self-stretch bg-gray-400"></div>
-      ) :
-      (
-        <hr className="my-6 h-0.5 border-t-0 bg-gray-400" />
-      )} */}
 
       <motion.div className="px-5 py-12 max-auto rounded overflow-hidden shadow-lg">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
