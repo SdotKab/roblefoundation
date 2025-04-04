@@ -10,6 +10,7 @@ type Props = {
 }
 
 const Navbar = ({ openNav }: Props) => {
+  const paypalLink = process.env.NEXT_PUBLIC_PAYPAL_LINK;
   const [navBg, setNavBg] = useState(false);
 
   useEffect(() => {
@@ -50,7 +51,7 @@ const Navbar = ({ openNav }: Props) => {
         {/* Button */}
         <div className="hidden lg:flex items-center space-x-10">
           <Link className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
-          href="/#contact"
+          href={paypalLink} 
           >
             DONATE
           </Link>

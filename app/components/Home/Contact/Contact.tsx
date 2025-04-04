@@ -7,6 +7,7 @@ import H2Text from "../../Helper/H2Text";
 import Image from "next/image";
 
 const Contact = () => {
+    const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL
     const inputStyles = `mb-5 w-full rounded-lg border-2 border-gray-100 px-5 py-3 placeholder-black`;
 
     const {
@@ -61,7 +62,7 @@ const Contact = () => {
                         <form
                             target="_blank"
                             onSubmit={onSubmit}
-                            action="https://formsubmit.co/211c352dcb295a6e2e8d62aca813434f"
+                            action={emailUrl}
                             method="POST"
                         >
                             <input 
