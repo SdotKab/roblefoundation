@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from 'react-hook-form';
 import image10 from "@/public/image10.jpg";
 import H2Text from "../../Helper/H2Text";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Contact = () => {
     const emailUrl = process.env.NEXT_PUBLIC_EMAIL_URL
@@ -139,7 +139,7 @@ const Contact = () => {
                 </div>
             </motion.div>
         </section>
-    )
+    );
 };
 
 export default Contact;

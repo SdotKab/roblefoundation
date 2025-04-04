@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import image5 from "@/public/image5.jpg";
 import image6 from "@/public/image6.jpg";
 import H2Text from '../../Helper/H2Text';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 const Impact = () => {
   return (
