@@ -6,6 +6,7 @@ import { FaFaucetDrip } from "react-icons/fa6";
 
 
 import Location from './Location';
+import Image from 'next/image';
 
 const locations: Array<LocationType> = [
   {
@@ -61,7 +62,7 @@ const Wells = () => {
           {/* GRAPHICS AND DESCRIPTION */}
             {/* GRAPHIC */}
             <div className="hidden md:flex basis-2/3 justify-center px-5 ">
-              <img 
+              <Image 
                   className="rounded-3xl shadow-2xl object-fit"
                   alt="map"
                   src="/Somaliland.png"
