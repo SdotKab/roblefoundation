@@ -9,11 +9,11 @@ const Work = () => {
   return (
       <section
         id="work"
-        className="mx-auto w-5/6 pt-24 pb-32 px-10"
+        className="mx-auto w-5/6"
       >
 
       <motion.div
-        className="w-4/5 mt-8"
+        className="mt-2 p-5"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -23,11 +23,11 @@ const Work = () => {
             visible: { opacity: 1, x: 0 },
         }}  
       >
-        <div className="w-4/5 ml-20">
+        <div className="flex flex-col p-4 items-center lg:p-20">
           <H2Text>
             Our Work: Why Water Matters
           </H2Text>
-          <ul>
+          <ul className="mt-5">
             <li className="py-3">
             Water is the essence of life, playing an indispensable role in both biological and social systems. It is the foundation of human survival and well-being, enabling critical bodily functions such as nutrient absorption, waste removal, and temperature regulation.
             </li>

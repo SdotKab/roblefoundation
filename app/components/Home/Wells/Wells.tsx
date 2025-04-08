@@ -40,17 +40,6 @@ const Wells = () => {
   return (
     <section id="wells" className="flex-row items-center pt-16 pb-32">
 
-      <motion.div
-        className="px-20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.3 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}  
-      >
         <div className="text-center mt-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
           <span>HELP BUILD LIFE-SUSTAINING {" "}</span>
@@ -72,7 +61,7 @@ const Wells = () => {
             </div>
 
             {/* LOCATIONS */}
-            <div className="flex basis-1/3 mt-10">
+            <div className="flex basis-1/3 mt-10 p-16">
               <div className="grid grid-cols-1 gap-8 p-2 md:px-5 md:grid-cols-2">
               {locations.map((location: LocationType) => (
                 <Location 
@@ -85,7 +74,6 @@ const Wells = () => {
               </div>
             </div>
         </div>
-      </motion.div>
 
     </section>
   )
