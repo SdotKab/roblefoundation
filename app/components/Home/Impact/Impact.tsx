@@ -9,7 +9,7 @@ import Image from "next/legacy/image";
 
 const Impact = () => {
   return (
-    <section id="impact" className="mx-auto w-5/6 pt-24 pb-24 mt-10">
+    <section id="impact" className="mx-auto w-5/6 pt-24 pb-5 mt-10">
         {/* HEADER */}
             <motion.div 
                 className="md:w-3/5"

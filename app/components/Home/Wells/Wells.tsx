@@ -38,7 +38,7 @@ const locations: Array<LocationType> = [
 
 const Wells = () => {
   return (
-    <section id="wells" className="flex-row items-center pt-16 pb-32">
+    <section id="wells" className="flex-row items-center pt-16 pb-10">
 
         <div className="text-center mt-10">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-3 leading-[2.5rem] sm:leading-[3rem]">
