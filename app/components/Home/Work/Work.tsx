@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import H2Text from '../../Helper/H2Text';
-import ImageCarousel from './ImageCarousel';
+import WorkCarousel from './WorkCarousel';
 
 const Work = () => {
   return (
@@ -42,7 +42,7 @@ const Work = () => {
         </div>
       </motion.div>
 
-        <ImageCarousel />
+        <WorkCarousel />
 
     </section>
   )

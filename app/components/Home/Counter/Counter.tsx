@@ -44,7 +44,7 @@ const Counter = () => {
                         duration={2.75}
                     />
                 </p>
-                <h1 className="sm:text-md text-xs md:text-lg text-center">Impacted Population</h1>
+                <h1 className="sm:text-md text-xs md:text-lg text-center">Beneficiaries</h1>
             </div>
         </div>
     </div>
