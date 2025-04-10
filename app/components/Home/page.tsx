@@ -7,7 +7,7 @@ import Contact from './Contact/Contact'
 import Impact from './Impact/Impact'
 import Mission from './Mission/Mission'
 import Counter from './Counter/Counter'
-import Profiles from './Profiles/Profiles'
+// import Profiles from './Profiles/Profiles'
 
 const Home = () => {
 
@@ -19,7 +19,7 @@ const Home = () => {
       <Wells />
       <Work />
       <Impact />
-      <Profiles />
+      {/* <Profiles /> */}
       <Contact />
     </div>
   )
