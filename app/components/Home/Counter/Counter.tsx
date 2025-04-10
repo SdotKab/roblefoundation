@@ -2,7 +2,6 @@
 
 import React from 'react'
 import CountUp from 'react-countup'
-import {motion} from "framer-motion"
 
 const Counter = () => {
   return (
