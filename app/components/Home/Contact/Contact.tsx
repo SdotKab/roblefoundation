@@ -135,6 +135,7 @@ const Contact = () => {
                             alt="contact-us-page-graphic"
                             src={image10}
                         />
+                        <p className="text-xs text-right">Photographed by Pablo Tosco</p>
                     </motion.div>
                 </div>
             </motion.div>

@@ -66,6 +66,7 @@ const Impact = () => {
                         alt="contact-us-page-graphic"
                         src={image5}
                     />
+                    <p className="text-xs text-right">Photographed by Pablo Tosco</p>
                 </motion.div>
             </div>
             {/*  */}
@@ -86,6 +87,7 @@ const Impact = () => {
                     alt="contact-us-page-graphic"
                     src={image6}
                 />
+                <p className="text-xs text-right">Photographed by Pablo Tosco</p>
                 </motion.div>
                 <motion.div
                     className="mt-10 basis-1/2 p-5 md:mt-0"

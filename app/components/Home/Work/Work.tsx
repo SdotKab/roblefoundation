@@ -9,7 +9,7 @@ const Work = () => {
   return (
       <section
         id="work"
-        className="mx-auto w-5/6"
+        className="mx-auto w-5/6 pt-10"
       >
 
       <motion.div
@@ -41,7 +41,7 @@ const Work = () => {
           </ul>
         </div>
       </motion.div>
-
+      <p className="text-xs text-right mr-10">Photographed by Pablo Tosco</p>
         <WorkCarousel />
 
     </section>
